@@ -1,0 +1,39 @@
+.su-box {
+  margin: 1.5em 0 1.5em;
+  border-width: 2px;
+  border-style: solid;
+  border-color:#7f8fb0;
+  border-radius:5px;
+}
+
+.su-box-style-noise .su-box-title {
+  background-image: url(../images/styles/style-noise.png);
+  background-position: 0 0;
+  background-repeat: repeat-x;
+}
+
+.article__block .su-box-title {
+  display: block;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color:#b2c2e3;
+  color:#e01c1c;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  margin: 0;
+}
+
+.su-box-content {
+  background-color: #fff;
+  color: #444;
+  padding: 1em;
+  border-bottom-left-radius:3px;
+  border-bottom-right-radius:3px;
+}
+
+.su-u-clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}

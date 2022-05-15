@@ -1,0 +1,19 @@
+.header-statuses {
+  display: flex;
+  padding: 0;
+}
+
+.header-statuses ul li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.header-statuses li::after {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .header-statuses {
+    flex-wrap: wrap;
+  }
+}

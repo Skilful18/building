@@ -1,0 +1,58 @@
+.how-working {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  background: #f7f4ef;
+}
+
+.how-working__item {
+  width: calc(44% - 10px);
+  margin: 0 auto;
+  position: relative;
+}
+
+.how-working__after:after {
+	content: ""; 
+	border: solid transparent;
+	position: absolute;    
+	left: 106%;
+  top: 25%;
+	border-left-color: #006dad;
+	border-width: 10px;
+}
+
+.how-working__item:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.how-working__item button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 15px;
+  color: #000;
+  padding: 2px 0;
+}
+
+.how-working__icon {
+  height: 150px;
+  margin: 0 auto;
+}
+
+.how-working__title {
+  margin-bottom: 55px;
+}
+
+.how-working__subtitle {
+  text-align: center;
+}
+
+
+@media (max-width: 576px) {
+  .how-working__item {
+    width: auto;
+    padding: 0 15px;
+  }
+  .how-working__after:after {
+    display: none;
+  }
+}

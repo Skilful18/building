@@ -1,0 +1,48 @@
+.see {
+  clear:both; 
+  margin-top:0em; 
+  margin-bottom:1em;
+}
+.see-also { 
+  padding:0px; 
+  margin: 0; 
+  padding-top:1em!important; 
+  padding-bottom:1em!important; 
+  width:100%; 
+  display: block; 
+  font-weight:bold; 
+  background-color:inherit; 
+  border:0!important; 
+  border-left: 5px solid #006dad!important; 
+  box-shadow: 0 1px 3px rgba(0,0,0,.57);
+  text-decoration:none; 
+} 
+
+.see-also:active, .see-also:hover { 
+  opacity: 1; 
+  transition: opacity 250ms; 
+  text-decoration:none; 
+} 
+.see-also { 
+  transition: background-color 250ms; 
+  opacity: 1; 
+  transition: opacity 250ms; 
+} 
+.see-also__text {
+  padding-left:1em; 
+  padding-right:1em;
+}
+.see-also .ctaText { 
+  font-weight:bold;
+   color:#000000; 
+   text-decoration: none; 
+   font-size: 16px; 
+} 
+.see-also .postTitle { 
+  color:inherit; 
+  text-decoration: underline!important; 
+  font-size: 16px; 
+} 
+.see-also:hover .postTitle { 
+  text-decoration: underline!important; 
+}
