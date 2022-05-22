@@ -8,6 +8,10 @@ class Service extends Controller
 {
     public function index()
     {
-        return view('building/index');
+        $services = \App\Models\Service::all();
+
+        return view('building/index', [
+            'services' => $services
+        ]);
     }
 }

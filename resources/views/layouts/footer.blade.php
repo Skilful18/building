@@ -65,9 +65,8 @@
         <div class="footer-block">
 
             <div class="footer-block__logo">
-                {{--           <?php
-
-                         if ($_SERVER['REQUEST_URI'] == '/') {  ?>--}}
+{{--                           <?php--}}
+{{--                         if ($_SERVER['REQUEST_URI'] == '/') {  ?>--}}
 {{--                <a href="javascript:void(0);" class="logo">--}}
 {{--                    <img src="/img/interface/logo.png" alt="логотип компании Артель и С">--}}
 {{--                </a>--}}
@@ -185,7 +184,6 @@
 </footer>
 
 <a id="scroller"><span class="arrow"></span></a>
-<script src="/public/js/script.min.js"></script>
 
 
 
