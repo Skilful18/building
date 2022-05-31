@@ -8,16 +8,18 @@
 <meta property="og:description" content="Cтроительство, реконструкция, отделка, утепление, крыши, фундамент, электрика, отопление,водоснабжение и канализация вашего дома!">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://arteli-stroy.ru">
-<meta property="og:image" content="https://arteli-stroy.ru/
-<?php //echo $art['img_big']; ?>
-    ">
+<meta property="og:image" content="https://arteli-stroy.ru/<?php //echo $art['img_big']; ?>">
 <meta property="og:image:type" content="image/webp">
 @section('styles')
+
 @endsection
+
 <?php //include('./include/3-plagins.php'); ?>
+
 @section('title')
     Мы более 15 лет занимаемся реконструкцией домов - Артель и С
 @endsection
+
 <?php //include('./include/header-test.php'); ?>
 
 <div itemprop="inLanguage" itemscope="" itemtype="https://schema.org/Language">
@@ -27,9 +29,8 @@
 
 <meta itemprop="name" content="Мы более 15 лет занимаемся реконструкцией домов - Артель и С">
 <link itemprop="url" href="https://arteli-stroy.ru">
-<meta itemprop="image" content="https://arteli-stroy.ru/
-<?php //echo $art['img_big']; ?>
-    ">
+<meta itemprop="image" content="https://arteli-stroy.ru/<?php //echo $art['img_big']; ?>">
+
 @section('content')
 
     <div class="intro">

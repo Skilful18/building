@@ -29,6 +29,7 @@
 <main>
 
 </main>
+
 </body>
 
 @include('layouts.footer')

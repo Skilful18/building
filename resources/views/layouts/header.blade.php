@@ -54,7 +54,7 @@
                 <nav class="menu__body">
                     <ul class="menu__list" itemscope="" itemtype="https://www.schema.org/SiteNavigationElement"
                         role="menu">
-                        <li itemprop="name" role="menuitem"><a class="menu__link" title="О компании" itemprop="url" href="/about">О компании</a></li>
+                        <li itemprop="name" role="menuitem"><a class="menu__link" title="О компании" itemprop="url" href="{{route('about')}}">О компании</a></li>
                         <li itemprop="name" role="menuitem">
                             <a class="menu__link" title="Услуги компании Артель и С" itemprop="url" href="/service/">Наши услуги</a>
 

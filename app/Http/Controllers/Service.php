@@ -14,4 +14,13 @@ class Service extends Controller
             'services' => $services
         ]);
     }
+
+    public function about()
+    {
+        $services = \App\Models\Service::all();
+
+        return view('building/about', [
+            'services' => $services
+        ]);
+    }
 }
