@@ -56,8 +56,7 @@
                         role="menu">
                         <li itemprop="name" role="menuitem"><a class="menu__link" title="О компании" itemprop="url" href="{{route('about')}}">О компании</a></li>
                         <li itemprop="name" role="menuitem">
-                            <a class="menu__link" title="Услуги компании Артель и С" itemprop="url" href="/service/">Наши услуги</a>
-
+                            <a class="menu__link" title="Услуги компании Артель и С" itemprop="url" href="{{route('service')}}">Наши услуги</a>
                             <span class="menu__arrow"></span>
                             <ul class="menu__sub-list">
                                 @foreach($services as $service)
@@ -65,16 +64,16 @@
                                 @endforeach
                             </ul>
                         </li>
-                        <li itemprop="name" role="menuitem"><a class="menu__link" title="Цены компании Артель и С" itemprop="url" href="/price">Цены</a>
+                        <li itemprop="name" role="menuitem"><a class="menu__link" title="Цены компании Артель и С" itemprop="url" href="{{route('price')}}">Цены</a>
                         </li>
                         <li itemprop="name" role="menuitem"><a class="menu__link" title="Спецпредложение Артель и С" itemprop="url"
-                                                               href="/special-offers" class="button btn-anim t-shadow">Спецпредложение</a></li>
+                                                               href="{{route('special-offers')}}" class="button btn-anim t-shadow">Спецпредложение</a></li>
                         <li itemprop="name" role="menuitem" style="display:none;"><a class="menu__link" title="Отзывы компании Артель и С" itemprop="url"
                                                                                      href="/all-feedback">Отзывы</a></li>
                         <li itemprop="name" role="menuitem"><a class="menu__link" title="Статьи компании Артель и С" itemprop="url"
-                                                               href="/articles/">Статьи</a></li>
+                                                               href="{{route('articles')}}">Статьи</a></li>
                         <li itemprop="name" role="menuitem"><a class="menu__link" title="Контакты компании Артель и С" itemprop="url"
-                                                               href="/contacts">Контакты</a></li>
+                                                               href="{{route('contacts')}}">Контакты</a></li>
                     </ul><!-- end navbar-block -->
                 </nav>
             </div>

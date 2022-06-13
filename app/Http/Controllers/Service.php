@@ -23,4 +23,49 @@ class Service extends Controller
             'services' => $services
         ]);
     }
+
+    public function service()
+    {
+        $services = \App\Models\Service::all();
+
+        return view('building/service', [
+            'services' => $services
+        ]);
+    }
+
+    public function price()
+    {
+        $services = \App\Models\Service::all();
+
+        return view('building/price', [
+            'services' => $services
+        ]);
+    }
+
+    public function specialOffers()
+    {
+        $services = \App\Models\Service::all();
+
+        return view('building/special-offers', [
+            'services' => $services
+        ]);
+    }
+
+    public function articles()
+    {
+        $services = \App\Models\Service::all();
+
+        return view('building/articles', [
+            'services' => $services
+        ]);
+    }
+
+    public function contacts()
+    {
+        $services = \App\Models\Service::all();
+
+        return view('building/contacts', [
+            'services' => $services
+        ]);
+    }
 }

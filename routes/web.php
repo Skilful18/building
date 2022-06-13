@@ -15,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\Service::class, 'index'])->name('/');
 Route::get('about',[\App\Http\Controllers\Service::class, 'about'])->name('about');
+Route::get('service',[\App\Http\Controllers\Service::class, 'service'])->name('service');
+Route::get('price',[\App\Http\Controllers\Service::class, 'price'])->name('price');
+Route::get('special-offers',[\App\Http\Controllers\Service::class, 'specialOffers'])->name('special-offers');
+Route::get('articles',[\App\Http\Controllers\Service::class, 'articles'])->name('articles');
+Route::get('contacts',[\App\Http\Controllers\Service::class, 'contacts'])->name('contacts');
 
 
 Route::get('/dashboard', function () {

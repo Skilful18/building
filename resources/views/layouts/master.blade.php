@@ -19,16 +19,16 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/public/img/touch-icon-ipad-retina.png">
     <link rel="stylesheet" href="/public/css/css.min.css">
     <title>@yield('title')</title>
+
 </head>
+
 @yield('styles')
+
 @include('layouts.header')
 
 <body itemscope="" itemtype="https://schema.org/WebPage">
 
 @yield('content')
-<main>
-
-</main>
 
 </body>
 
