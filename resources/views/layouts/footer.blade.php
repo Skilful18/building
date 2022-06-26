@@ -82,16 +82,16 @@
 
             <div class="footer-block__list">
                 <div>
-                    <a href="/service/construction/">Строительство</a>
-                    <a href="/service/reconstruction/">Реконструкция</a>
-                    <a href="/service/extensions/">Пристройки</a>
-                    <a href="/service/decoration/">Отделка</a>
-                    <a href="/service/roof/">Крыши</a>
-                    <a href="/service/foundation/">Фундамент</a>
-                    <a href="/service/warming/" rel="nofollow">Утепление</a>
-                    <a href="/service/heating/" rel="nofollow">Отопление</a>
-                    <a href="/service/electrician/" rel="nofollow">Электрика</a>
-                    <a href="/service/water-system/" rel="nofollow">Водопровод и канализация</a>
+                    <a href="{{route('construction')}}">Строительство</a>
+                    <a href="{{route('reconstruction')}}">Реконструкция</a>
+                    <a href="{{route('extensions')}}">Пристройки</a>
+                    <a href="{{route('decoration')}}">Отделка</a>
+                    <a href="{{route('roof')}}">Крыши</a>
+                    <a href="{{route('foundation')}}">Фундамент</a>
+                    <a href="{{route('warming')}}" rel="nofollow">Утепление</a>
+                    <a href="{{route('heating')}}" rel="nofollow">Отопление</a>
+                    <a href="{{route('electrician')}}" rel="nofollow">Электрика</a>
+                    <a href="{{route('water-system')}}" rel="nofollow">Водопровод и канализация</a>
                 </div>
                 <div>
                     <span class="city-footer">регион: <a class="city-open" href="javascript:void(0);">Москва</a></span>

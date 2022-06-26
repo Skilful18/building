@@ -772,8 +772,6 @@ $description = "Множество интересных статей ✅ кот�
                         </div>
                     </a>
 
-
-
                     <div class="servicePage-block__text"></div>
 
                 </div>
