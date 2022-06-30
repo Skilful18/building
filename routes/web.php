@@ -31,6 +31,7 @@ Route::get('service/warming',[\App\Http\Controllers\Service::class, 'warming'])-
 Route::get('service/heating',[\App\Http\Controllers\Service::class, 'heating'])->name('heating');
 Route::get('service/electrician',[\App\Http\Controllers\Service::class, 'electrician'])->name('electrician');
 Route::get('service/water-system',[\App\Http\Controllers\Service::class, 'waterSystem'])->name('water-system');
+Route::get('article/{id}',[\App\Http\Controllers\ArticleController::class, 'articles'])->name('article');
 
 
 Route::get('/dashboard', function () {
@@ -38,3 +39,8 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__ . '/auth.php';
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

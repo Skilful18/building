@@ -80,7 +80,7 @@ $description = "Множество интересных статей ✅ кот�
 
             <div class="servicePage-block">
 
-                <a href="/articles/srub-vneshnyaya-otdelka">
+                <a href="{{route('article')}}">
                     <div class="servicePage-block__item">
                         <img src="/public/img/pages/articles/srub-vneshnya-otdelka-223x185.webp" alt="Сруб: внешняя отделка" class="servicePage-block__item-img">
                         <span class="servicePage-block__item-text">Сруб: внешняя отделка</span>
