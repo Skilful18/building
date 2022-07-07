@@ -60,7 +60,7 @@
                             <span class="menu__arrow"></span>
                             <ul class="menu__sub-list">
                                 @foreach($services as $service)
-                                    <li><a itemprop="url" href="/" class="menu__sub-link">{{$service->name}}</a></li>
+                                    <li><a itemprop="url" href="{{route('service-one', ['url' => $service->url])}}" class="menu__sub-link">{{$service->name}}</a></li>
                                 @endforeach
                             </ul>
                         </li>
