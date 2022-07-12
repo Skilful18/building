@@ -16,7 +16,7 @@
 
 @endsection
 
-<!--  --><?php //include('../../include/plagins-without-timer.php.php.php'); ?>
+<?php //include('../../include/plagins-without-timer.php.php.php'); ?>
 
 @section('title')
     Услуги по реконструкции 🔨 достройке домов 🛠 прайсы 🛠 - Артель и С

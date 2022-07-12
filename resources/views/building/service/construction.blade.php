@@ -16,7 +16,7 @@
 
 @endsection
 
-<!--  --><?php //include('../../include/plagins-without-timer.php.php'); ?>
+<?php //include('../../include/plagins-without-timer.php.php'); ?>
 
 @section('title')
     Услуги по строительству домов 🔨 от  компании - «Артель и С»

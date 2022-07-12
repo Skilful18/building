@@ -23,18 +23,12 @@ Route::get('contacts',[\App\Http\Controllers\Service::class, 'contacts'])->name(
 
 Route::group(['prefix' => 'service'], function () {
     Route::get('/{url}', [\App\Http\Controllers\Service::class, 'serviceOne'])->name('service-one');
-    Route::get('/construction',[\App\Http\Controllers\Service::class, 'construction'])->name('construction');
-    Route::get('/reconstruction',[\App\Http\Controllers\Service::class, 'reconstruction'])->name('reconstruction');
-    Route::get('/extensions',[\App\Http\Controllers\Service::class, 'extensions'])->name('extensions');
-    Route::get('/decoration',[\App\Http\Controllers\Service::class, 'decoration'])->name('decoration');
-    Route::get('/roof',[\App\Http\Controllers\Service::class, 'roof'])->name('roof');
-    Route::get('/foundation',[\App\Http\Controllers\Service::class, 'foundation'])->name('foundation');
-    Route::get('/warming',[\App\Http\Controllers\Service::class, 'warming'])->name('warming');
-    Route::get('/heating',[\App\Http\Controllers\Service::class, 'heating'])->name('heating');
+    Route::get('/{url}', [\App\Http\Controllers\Service::class, 'service-page'])->name('service-page');
     Route::get('/electrician',[\App\Http\Controllers\Service::class, 'electrician'])->name('electrician');
-    Route::get('/water-system',[\App\Http\Controllers\Service::class, 'waterSystem'])->name('water-system');
-    Route::get('article/{id}',[\App\Http\Controllers\ArticleController::class, 'articles'])->name('article');
 });
+
+Route::get('article/{id}',[\App\Http\Controllers\ArticleController::class, 'articles'])->name('article');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

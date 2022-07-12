@@ -82,16 +82,13 @@
 
             <div class="footer-block__list">
                 <div>
-                    <a href="{{route('construction')}}">Строительство</a>
-                    <a href="{{route('reconstruction')}}">Реконструкция</a>
-                    <a href="{{route('extensions')}}">Пристройки</a>
-                    <a href="{{route('decoration')}}">Отделка</a>
-                    <a href="{{route('roof')}}">Крыши</a>
-                    <a href="{{route('foundation')}}">Фундамент</a>
-                    <a href="{{route('warming')}}" rel="nofollow">Утепление</a>
-                    <a href="{{route('heating')}}" rel="nofollow">Отопление</a>
-                    <a href="{{route('electrician')}}" rel="nofollow">Электрика</a>
-                    <a href="{{route('water-system')}}" rel="nofollow">Водопровод и канализация</a>
+                    @foreach($services as $service)
+                        @if($service->id == 6 || $service->id == 8 || $service->id == 9 || $service->id == 10)
+                            <a rel="nofollow" href="{{route('service-one', ['url' => $service->url])}}">{{$service->name}}</a>
+                            @else
+                                <a href="{{route('service-one', ['url' => $service->url])}}">{{$service->name}}</a>
+                        @endif
+                    @endforeach
                 </div>
                 <div>
                     <span class="city-footer">регион: <a class="city-open" href="javascript:void(0);">Москва</a></span>

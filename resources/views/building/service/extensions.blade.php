@@ -16,7 +16,7 @@
 
 @endsection
 
-<!--  --><?php //require('../../include/plagins-without-timer.php'); ?>
+<?php //require('../../include/plagins-without-timer.php'); ?>
 
 @section('title')
     Услуги по пристройкам и надстройкам 🔨 от компании - «Артель и С»

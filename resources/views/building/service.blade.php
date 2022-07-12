@@ -2,51 +2,21 @@
 
 <meta name="robots" content="noindex,follow">
 
-<?php
-/*
-$num = 153;
-
-$articles = mysqli_query($connection, "SELECT * FROM articles WHERE id = $num"); //произвести запрос
-
-$art =  mysqli_fetch_assoc($articles);
-
-$title = "Услуги по реконструкции 🔨 достройке 🛠 строительству 🛠 отделке";
-
-$description = "Услуги, которые оказывает наша компании по реконструкции. достройке, строительству и отделке домов частном и загородно-дачном сегменте - обращайтесь!";
-
-//mysqli_query($connection, "UPDATE articles SET pubdate = CURRENT_TIMESTAMP() WHERE id = $num");
-
-*/?>
-
-<meta name="description" content="
-<?php /*echo $description; */?>
-    ">
+<meta name="description" content="<?php /*echo $description; */?>">
 
 <meta property="og:site_name" content="Артель и С">
-<meta property="og:title" content="
-<?php /*echo $title; */?>
-    ">
-<meta property="og:description" content="
-<?php /*echo $description; */?>
-    ">
+<meta property="og:title" content="<?php /*echo $title; */?>">
+<meta property="og:description" content="<?php /*echo $description; */?>">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://arteli-stroy.ru/
-<?php /*echo $art['link']; */?>
-    ">
-<meta property="og:image" content="https://arteli-stroy.ru/
-<?php /*echo $art['img_big']; */?>
-    ">
+<meta property="og:url" content="https://arteli-stroy.ru/<?php /*echo $art['link']; */?>">
+<meta property="og:image" content="https://arteli-stroy.ru/<?php /*echo $art['img_big']; */?>">
 <meta property="og:image:type" content="image/webp">
-
-<?php /*require('../include/3-plagins.php'); */?>
 
 @section('styles')
 
 @endsection
 
-<body itemscope="" itemtype="https://schema.org/WebPage">
-
-<?php /*include('../include/header.php'); */?>
+<?php /*require('../include/3-plagins.php'); */?>
 
 @section('title')
     Услуги по реконструкции 🔨 достройке 🛠 строительству 🛠 отделке
@@ -57,8 +27,6 @@ $description = "Услуги, которые оказывает наша ком�
 <div class="container">
 
     <section class="section">
-
-        <?php /*include('../sidebar.php'); */?>
 
         <div class="servicePage content">
 
@@ -92,14 +60,20 @@ $description = "Услуги, которые оказывает наша ком�
 
             <div class="servicePage-block">
 
-                <a href="/service/construction/">
-                    <div class="servicePage-block__item">
-                        <img src="/public/img/service-page/construction-223x185.webp" alt="project" class="servicePage-block__item-img">
-                        <span class="servicePage-block__item-text">Строительство домов</span>
-                    </div>
-                </a>
+                @foreach($services as $service)
 
-                <a href="/service/reconstruction/">
+                    <a href="{{route('service-one', ['url' => $service->url])}}">
+                        <div class="servicePage-block__item">
+                            <img src="..\..\..\public\storage\{{$service->img}}" alt="project" class="servicePage-block__item-img">
+                            <span class="servicePage-block__item-text">{{$service->name}}</span>
+                        </div>
+                    </a>
+
+                @endforeach
+
+                    {{--/public/img/service-page/construction-223x185.webp--}}
+
+                {{--<a href="/service/reconstruction/">
                     <div class="servicePage-block__item">
                         <img src="/public/img/service-page/reconstruction-223x185.webp" alt="project" class="servicePage-block__item-img">
                         <span class="servicePage-block__item-text">Реконструкция домов</span>
@@ -167,7 +141,7 @@ $description = "Услуги, которые оказывает наша ком�
                         <img src="/public/img/service-page/office-repair-223x185.webp" alt="project" class="servicePage-block__item-img">
                         <span class="servicePage-block__item-text">Ремонт офисов и помещений</span>
                     </div>
-                </a>
+                </a>--}}
 
                 <div class="servicePage-block__text"></div>
             </div>

@@ -70,7 +70,7 @@ class Service extends Controller
         ]);
     }
 
-    public function construction()
+    /*public function construction()
     {
         $services = \App\Service::all();
 
@@ -133,6 +133,15 @@ class Service extends Controller
         ]);
     }
 
+    public function waterSystem()
+    {
+        $services = \App\Service::all();
+
+        return view('building/service/water-system', [
+            'services' => $services
+        ]);
+    }
+
     public function heating()
     {
         $services = \App\Service::all();
@@ -140,7 +149,7 @@ class Service extends Controller
         return view('building/service/heating', [
             'services' => $services
         ]);
-    }
+    }*/
 
     public function electrician()
     {
@@ -151,18 +160,19 @@ class Service extends Controller
         ]);
     }
 
-    public function waterSystem()
+    public function serviceOne(Request $request)
     {
         $services = \App\Service::all();
 
-        return view('building/service/water-system', [
+        return view('building/service/service-page', [
             'services' => $services
         ]);
+
     }
-    public function serviceOne(Request $request)
+
+    public function serviceAll()
     {
-        $service = \App\Service::query()->where(['id' => $request->id])->firstOrNew();
-        $url = \App\Url::query()->where(['id' => $request->id])->firstOrNew();
-        dd(\url($url->url));
+        $services = \App\Service::all();
+        dd($services);
     }
 }

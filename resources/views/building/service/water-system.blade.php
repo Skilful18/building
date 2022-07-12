@@ -16,7 +16,7 @@
 
 @endsection
 
-<!--  --><?php //include('../../include/plagins-without-timer.php.php.php'); ?>
+<?php //include('../../include/plagins-without-timer.php.php.php'); ?>
 
 @section('title')
     Услуги по водоснабжению и канализации 🔨 в Москве - Артель и С

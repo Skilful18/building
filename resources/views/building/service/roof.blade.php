@@ -16,7 +16,7 @@
 
 @endsection
 
-<!--  --><?php //include('../../include/plagins-without-timer.php.php.php'); ?>
+<?php //include('../../include/plagins-without-timer.php.php.php'); ?>
 
 @section('title')
     Услуги по ремонту 🔨 строительству крыш от компании - Артель и С

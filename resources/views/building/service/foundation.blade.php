@@ -16,7 +16,7 @@
 
 @endsection
 
-<!--  --><?php //require('../../include/plagins-without-timer.php'); ?>
+<?php //require('../../include/plagins-without-timer.php'); ?>
 
 @section('title')
     Услуги по строительству фундаментов 🔨 калькуляторы - Артель и С

@@ -16,7 +16,7 @@
 
 @endsection
 
-<!--  --><?php //include('../../include/plagins-without-timer.php.php.php'); ?>
+<?php //include('../../include/plagins-without-timer.php.php.php'); ?>
 
 @section('title')
     Услуги по отоплению 🔨 отопительных систем в Москве - Артель и С
