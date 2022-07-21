@@ -62,7 +62,7 @@
 
                 @foreach($services as $service)
 
-                    <a href="{{route('service-one', ['url' => $service->url])}}">
+                    <a href="{{route('service-one', ['url' => $service->url, 'id' => $service->id])}}">
                         <div class="servicePage-block__item">
                             <img src="..\..\..\public\storage\{{$service->img}}" alt="project" class="servicePage-block__item-img">
                             <span class="servicePage-block__item-text">{{$service->name}}</span>

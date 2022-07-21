@@ -23,11 +23,11 @@ Route::get('contacts',[\App\Http\Controllers\Service::class, 'contacts'])->name(
 
 Route::group(['prefix' => 'service'], function () {
     Route::get('/{url}', [\App\Http\Controllers\Service::class, 'serviceOne'])->name('service-one');
-    Route::get('/{url}', [\App\Http\Controllers\Service::class, 'service-page'])->name('service-page');
+//    Route::get('/{url}', [\App\Http\Controllers\Service::class, 'servicePage'])->name('service-page');
     Route::get('/electrician',[\App\Http\Controllers\Service::class, 'electrician'])->name('electrician');
 });
 
-Route::get('article/{id}',[\App\Http\Controllers\ArticleController::class, 'articles'])->name('article');
+Route::get('article-page',[\App\Http\Controllers\ArticleController::class, 'articles'])->name('article-page');
 
 
 Route::get('/dashboard', function () {

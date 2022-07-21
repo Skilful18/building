@@ -9,6 +9,8 @@ class ArticleController extends Controller
 {
     public function articles(Request $request)
     {
-        $articles = Article
+        $articles = Article::all();
+
+        dd($articles);
     }
 }

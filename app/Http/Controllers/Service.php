@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\SubService;
 use http\Url;
 use Illuminate\Http\Request;
 
@@ -29,7 +30,7 @@ class Service extends Controller
     {
         $services = \App\Service::all();
 
-        return view('building/service', [
+        return view('building/service-one', [
             'services' => $services
         ]);
     }
@@ -164,8 +165,25 @@ class Service extends Controller
     {
         $services = \App\Service::all();
 
+        $subServices = SubService::query()->where(['service_id' => $request->id])->get();
+
+        return view('building/service-one', [
+            'services' => $services,
+            'subServices' => $subServices
+        ]);
+
+    }
+
+    public function servicePage(Request $request)
+    {
+
+        $services = \App\Service::all();
+
+        $subServices = SubService::query()->where(['service_id' => $request->id])->get();
+
         return view('building/service/service-page', [
-            'services' => $services
+            'services' => $services,
+            'subServices' => $subServices
         ]);
 
     }
